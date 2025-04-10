@@ -6,7 +6,7 @@ This website depicts different trends, statistics and data regarding the online 
 
 ### Live Link
 
-[Blog Page](https://{username}.github.io/{reponame}/homework-2)
+[Blog Page](https://github.com/XayK317/InfoDatingFinal.git)
 
 ### Key Takeaways
 
