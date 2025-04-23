@@ -12,6 +12,7 @@
         transition: all 0.3s ease;
       }
     </style>
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body class="font-sans text-black bg-white px-8 py-6">
     <!-- <nav>
@@ -22,14 +23,25 @@
     </nav> -->
 
     <!-- Background Rectangle that Fills the Top -->
-    <div class="bg-[#e6e4ef] h-24 w-full absolute top-0 left-0 z-0"></div>
+    <div class="top-rectangle h-24 w-full absolute top-0 left-0 z-0"></div>
+    <!-- originalx code before
+    <div class="bg-[#e6e4ef] h-24 w-full absolute top-0 left-0 z-0"></div> -->
 
     <!-- Navbar that sits on top of the rectangle -->
     <header
       class="flex justify-between items-center mb-10 relative z-10 bg-transparent px-8 py-4"
     >
-      <div class="flex items-center space-x-2">
+      <!-- original code -->
+      <!-- <div class="flex items-center space-x-2">
         <div class="w-6 h-6 rounded-full border-2 border-black"></div>
+        <span class="text-xl font-semibold">Online Dating Trends</span>
+      </div> -->
+      <div class="flex items-center space-x-2">
+        <img
+          src="Images/0.png"
+          alt="Logo"
+          class="w-10 h-10 rounded-full object-cover"
+        />
         <span class="text-xl font-semibold">Online Dating Trends</span>
       </div>
 
