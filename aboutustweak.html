@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/styleus.css" />
+    <style>
+      .hover-bounce:hover {
+        transform: translateY(-6px) scale(1.03);
+        transition: all 0.3s ease;
+      }
+    </style>
+  </head>
+  <body class="font-sans text-black bg-white px-8 py-6">
+    <!-- Background Rectangle -->
+    <div class="top-rectangle h-24 w-full absolute top-0 left-0 z-0"></div>
+
+    <!-- Navbar -->
+    <header
+      class="flex justify-between items-center mb-10 relative z-10 bg-transparent px-8 py-4"
+    >
+      <div class="flex items-center space-x-2">
+        <img
+          src="Images/0.png"
+          alt="Logo"
+          class="w-10 h-10 rounded-full object-cover"
+        />
+        <span class="text-xl font-semibold">Online Dating Trends</span>
+      </div>
+
+      <nav class="space-x-4 text-sm">
+        <a
+          href="homepage.html"
+          class="px-3 py-1 rounded-full hover:border hover:border-black transition"
+          >Home</a
+        >
+        <a
+          href="description.html"
+          class="px-3 py-1 rounded-full hover:border hover:border-black transition"
+          >Analysis</a
+        >
+        <a
+          href="datavisuals.html"
+          class="px-3 py-1 rounded-full hover:border hover:border-black transition"
+          >Data Visualization</a
+        >
+        <a
+          href="aboutus.html"
+          class="border border-black px-3 py-1 rounded-full bg-black text-white"
+          >About us</a
+        >
+      </nav>
+    </header>
+
+    <!-- Main Section -->
+    <section class="grid grid-cols-1 md:grid-cols-3 gap-10">
+      <!-- Left About Text -->
+      <div class="md:col-span-1 space-y-6">
+        <h1 class="text-5xl font-bold">About us</h1>
+        <p class="text-sm">
+          Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+          nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
+          volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
+          ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+          Duis autem vel eum iriure dolor in.
+        </p>
+        <button
+          class="border border-black px-4 py-2 rounded-full hover:bg-black hover:text-white transition hover-bounce"
+        >
+          Contact us
+        </button>
+      </div>
+
+      <!-- Image Flexbox Grid -->
+      <div class="md:col-span-2 flex flex-wrap justify-center gap-8">
+        <!-- Cards -->
+        <div class="w-full sm:w-[45%] lg:w-[30%] text-center group">
+          <div
+            class="aspect-square border-2 border-black rounded-md hover:grayscale transition duration-300"
+          ></div>
+          <p class="text-sm mt-2">
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+            nonummy nibh
+          </p>
+        </div>
+
+        <div class="w-full sm:w-[45%] lg:w-[30%] text-center group">
+          <div
+            class="aspect-square border-2 border-black rounded-md hover:grayscale transition duration-300"
+          ></div>
+          <p class="text-sm mt-2">
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+            nonummy nibh
+          </p>
+        </div>
+
+        <div class="w-full sm:w-[45%] lg:w-[30%] text-center group">
+          <div
+            class="aspect-square border-2 border-black rounded-md hover:grayscale transition duration-300"
+          ></div>
+          <p class="text-sm mt-2">
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+            nonummy nibh
+          </p>
+        </div>
+
+        <div class="w-full sm:w-[45%] lg:w-[30%] text-center group">
+          <div
+            class="aspect-square border-2 border-black rounded-md hover:grayscale transition duration-300"
+          ></div>
+          <p class="text-sm mt-2">
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+            nonummy nibh
+          </p>
+        </div>
+
+        <div class="w-full sm:w-[45%] lg:w-[30%] text-center group">
+          <div
+            class="aspect-square border-2 border-black rounded-md hover:grayscale transition duration-300"
+          ></div>
+          <p class="text-sm mt-2">
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+            nonummy nibh
+          </p>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

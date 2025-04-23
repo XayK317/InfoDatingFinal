@@ -1,0 +1,43 @@
+/* styleuss.css */
+
+/* Set the background rectangle at the top */
+.top-rectangle {
+  background-color: #de7e5d !important; /* Your custom hex value */
+}
+
+/* Set the entire navigation bar background */
+header {
+  background-color: #de7e5d !important;
+}
+
+/* Set the rest of the homepage background */
+body {
+  background-color: #ffe5d6 !important;
+}
+
+/* Nav link styling for better contrast */
+header nav a {
+  color: white;
+  background-color: transparent;
+  border-color: white;
+}
+
+/* Nav link hover effect */
+header nav a:hover {
+  background-color: white;
+  color: #de7e5d;
+  border-color: white;
+}
+
+/* Optional: Buttons for consistency */
+button {
+  background-color: transparent;
+  color: black;
+  border-color: black;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: black;
+  color: white;
+}
