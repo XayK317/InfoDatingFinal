@@ -1,29 +1,166 @@
 <!DOCTYPE html>
-<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Love after Covid</title>
+    <title>Homepage</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      /* Simple bounce on hover */
+      .hover-bounce:hover {
+        transform: translateY(-6px) scale(1.03);
+        transition: all 0.3s ease;
+      }
+    </style>
+    <link rel="stylesheet" href="css/style.css" />
   </head>
-  <body>
-    <h1 id="hat">Love after Covid</h1>
-    <p id="shirt">
-      The Coronavirus, which dominated the early 2020s, was a generationally
+  <body class="font-sans text-black bg-white px-8 py-6">
+    <!-- <nav>
+      <a href="homepage.html">Home Page</a>
+      <a href="aboutus.html">About Us</a>
+      <a href="description.html">Analysis</a>
+      <a href="datavisuals.html">Data Visualization</a>
+    </nav> -->
+
+    <!-- Background Rectangle that Fills the Top -->
+    <div class="top-rectangle h-24 w-full absolute top-0 left-0 z-0"></div>
+    <!-- originalx code before
+    <div class="bg-[#e6e4ef] h-24 w-full absolute top-0 left-0 z-0"></div> -->
+
+    <!-- Navbar that sits on top of the rectangle -->
+    <header
+      class="flex justify-between items-center mb-10 relative z-10 bg-transparent px-8 py-4"
+    >
+      <!-- original code -->
+      <!-- <div class="flex items-center space-x-2">
+        <div class="w-6 h-6 rounded-full border-2 border-black"></div>
+        <span class="text-xl font-semibold">Online Dating Trends</span>
+      </div> -->
+      <div class="flex items-center space-x-2">
+        <img
+          src="Images/0.png"
+          alt="Logo"
+          class="w-10 h-10 rounded-full object-cover"
+        />
+        <span class="text-xl font-semibold">Online Dating Trends</span>
+      </div>
+
+      <nav class="space-x-4 text-sm">
+        <a
+          href="homepage.html"
+          class="px-3 py-1 rounded-full hover:border hover:border-black transition"
+          >Home</a
+        >
+        <a
+          href="description.html"
+          class="border border-black px-3 py-1 rounded-full bg-black text-white"
+          >Analysis</a
+        >
+        <a
+          href="datavisuals.html"
+          class="px-3 py-1 rounded-full hover:border hover:border-black transition"
+          >Data Visualization</a
+        >
+        <a
+          href="aboutustweak.html"
+          class="px-3 py-1 rounded-full hover:border hover:border-black transition"
+          >About us</a
+        >
+      </nav>
+    </header>
+
+    <!-- Home Screen Section -->
+    <section
+      class="min-h-screen flex flex-col-reverse md:flex-row items-center justify-between px-10 py-16 gap-10"
+    >
+      <!-- Left Content -->
+      <div class="md:w-1/2 space-y-6 text-center md:text-left">
+        <!-- Main Heading -->
+        <h1 class="text-5xl md:text-6xl font-bold leading-tight">
+          Love after Covid<br />
+        </h1>
+
+        <!-- Paragraph -->
+        <p class="text-lg font-medium leading-relaxed">
+          The Coronavirus, which dominated the early 2020s, was a generationally
       defining event. The virus and subsequent lockdowns accelerated a growing
       trend of loneliness across all demographics. The effectively "lost time"
       created a deficit in both social interaction and romantic connections.
       This presented a valuable opportunity for dating apps and services to help
       compensate for these dulled social skills, leading to a spike in users.
-    </p>
-    <br />
-    <p id="pants">
-      The data provided is a collection from several sources, highlighting the
-      relevance and growth of dating app services in America.
-    </p>
-    <script src="Description.js"></script>
-    <script src="Description.css"></script>
-    <script src="Description.html"></script>
 
+        </p>
+
+        <!-- Button -->
+        <button
+          class="mt-4 px-6 py-2 border-2 border-black rounded-full text-lg font-semibold hover:bg-black hover:text-white transition-all hover-bounce"
+        >
+          See for yourself
+        </button>
+      </div>
+
+      <!-- Right Content: Phone Images -->
+      <div class="md:w-1/2 flex items-center justify-center gap-6 relative">
+        <img
+          src="Images/Bumble Phone.png"
+          alt="Bumble Phone"
+          class="absolute top-50 rotate-[15deg] z-0 hover-bounce"
+          style="left: 380px; width: 425px"
+        />
+        <img
+          src="Images/Tinder Phone.png"
+          alt="Tinder Phone"
+          class="w-48 md:w-60 relative z-10 hover-bounce"
+          style="width: 500px"
+        />
+      </div>
+    </section>
   </body>
+
+  <!-- Footer Section -->
+  <footer class="custom-footer">
+    <div class="footer-container">
+      <!-- Left Links -->
+      <div class="footer-column">
+        <ul>
+          <li><a href="#">Get Support</a></li>
+          <li><a href="#">Find a Designer</a></li>
+          <li><a href="#">Your Account</a></li>
+          <li><a href="#">Become an Affiliate</a></li>
+          <li><a href="#">Privacy & Cookie Policy</a></li>
+        </ul>
+      </div>
+
+      <!-- Center Logo and Description -->
+      <div class="footer-center">
+        <div class="footer-logo">DS<br />CO</div>
+        <p class="footer-description">
+          Divi Child Themes, Portfolio / Blogging, Shoots Designs and online
+          brands for photographers and small creative businesses.
+        </p>
+      </div>
+
+      <!-- Right Links -->
+      <div class="footer-column">
+        <ul>
+          <li><a href="#">All Products</a></li>
+          <li><a href="#">Divi Child Themes</a></li>
+          <li><a href="#">Photography Designs</a></li>
+          <li><a href="#">Shopify Designs</a></li>
+          <li><a href="#">Stationery</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Social Icons -->
+    <div class="footer-social">
+      <span>📘</span>
+      <span>🐦</span>
+      <span>📌</span>
+      <span>📷</span>
+      <span>▶️</span>
+      <span>✉️</span>
+      <span>📰</span>
+    </div>
+  </footer>
 </html>
