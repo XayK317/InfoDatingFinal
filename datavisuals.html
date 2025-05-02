@@ -72,50 +72,157 @@
     <!-- Home Screen Section -->
     <section
       class="min-h-screen flex flex-col-reverse md:flex-row items-center justify-between px-10 py-16 gap-10"
-    >
-      <!-- Left Content -->
-      <div class="md:w-1/2 space-y-6 text-center md:text-left">
+    > <div class="container">
+        <div class="column">
+      <!-- Left content -->
+      <div class="md:w-1/2 space-y-6 text-center md:text-left;">
         <!-- Main Heading -->
         <h1 class="text-5xl md:text-6xl font-bold leading-tight">
-          Online Dating Pre, Peri, & Post Covid-19 <br />
+            <span>Data Visualization</span><br />
         </h1>
+      
+        <div class="slideshow-container relative mx-auto max-w-4xl">
+          <!-- Slide 1 -->
+          <div class="slide fade hidden">
+            <img src="Images/Datingappinformation.PNG" alt="Slide 1" class="w-full h-auto rounded-lg" style="width: 600px; height: 800px;" />
+            <div class="text-center mt-4 text-lg font-semibold">Credit to Pew Research</div>
+          </div>
 
-        <!-- Paragraph -->
-        <p class="text-lg font-medium leading-relaxed">
-          Taking a look at the online dating trends before, during and after the
-          Covid-19 pandemic, and how online dating adjusted accordingly. By
-          looking at age, and gender demographics, according to region
-          domestically in the United States during a set of years, we can see
-          how these trends altered throughout the quarantine-related timeframe.
-        </p>
+            <!-- Slide 2 -->
+            <div class="slide fade hidden">
+            <div class="flip-card">
+              <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img src="Images/Us Dating App map.png" alt="Slide 2" class="w-full h-auto rounded-lg" />
+              </div>
+              <div class="flip-card-back">
+                <img src="Images/Map outline.png" />
+              </div>
+              </div>
+            </div>
+            <div class="text-center mt-4 text-lg font-semibold">Credit To PCMag</div>
+            </div>
+            <style>
+              .flip-card {
+                background-color: transparent;
+                width: 500px;
+                height: 200px;
+                border: 1px solid #f1f1f1;
+                perspective: 1000px; 
+              }
+              
+              
+              .flip-card-inner {
+                position: relative;
+                width: 100%;
+                height: 100%;
+                text-align: center;
+                transition: transform 0.8s;
+                transform-style: preserve-3d;
+              }
+              
+             
+              .flip-card:hover .flip-card-inner {
+                transform: rotateY(180deg);
+              }
+              
+             
+              .flip-card-front, .flip-card-back {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                -webkit-backface-visibility: hidden; 
+                backface-visibility: hidden;
+              }
+              
+            
+              .flip-card-front {
+                background-color: #bbb;
+                color: black;
+              }
+              
+             
+              .flip-card-back {
+                background-color: dodgerblue;
+                color: white;
+                transform: rotateY(180deg);
+              }
+              </style>
+            <div>
+            
+          <!-- Slide 3 -->
+          <div class="slide fade hidden">
+            <img src="Images/ft_2023.02.02_key-findings-online-dating_02.png" alt="Slide 3" class="w-full h-auto rounded-lg" />
+            <div class="text-center mt-4 text-lg font-semibold">Credit to Pew Research</div>
+          </div>
 
-        <!-- Button -->
-        <button
-          class="mt-4 px-6 py-2 border-2 border-black rounded-full text-lg font-semibold hover:bg-black hover:text-white transition-all hover-bounce"
-        >
-          See for yourself
-        </button>
+          <!-- Slide 4-->
+          <div class="slide fade hidden">
+            <img src="Images/ft_2023.02.02_key-findings-online-dating_04.png" alt="Slide 4" class="w-full h-auto rounded-lg" />
+            <div class="text-center mt-4 text-lg font-semibold">Credit to Pew Research</div>
+          </div>
+
+          <!-- Navigation Arrows -->
+          <a class="prev absolute left-0 top-1/2 transform -translate-y-1/2 text-2xl cursor-pointer">&#10094;</a>
+          <a class="next absolute right-0 top-1/2 transform -translate-y-1/2 text-2xl cursor-pointer">&#10095;</a>
+        </div>
+
+        <script>
+          let slideIndex = 0;
+          const slides = document.querySelectorAll('.slide');
+          const prev = document.querySelector('.prev');
+          const next = document.querySelector('.next');
+
+          function showSlide(index) {
+            slides.forEach((slide, i) => {
+              slide.classList.toggle('hidden', i !== index);
+            });
+          }
+
+          function changeSlide(step) {
+            slideIndex = (slideIndex + step + slides.length) % slides.length;
+            showSlide(slideIndex);
+          }
+
+          prev.addEventListener('click', () => changeSlide(-1));
+          next.addEventListener('click', () => changeSlide(1));
+
+
+          // Initialize slideshow
+          showSlide(slideIndex);
+        </script>
+
+</div>
+        
+         
+       </div>
       </div>
 
-      <!-- Right Content: Phone Images -->
-      <div class="md:w-1/2 flex items-center justify-center gap-6 relative">
-        <img
-          src="Images/Bumble Phone.png"
-          alt="Bumble Phone"
-          class="absolute top-50 rotate-[15deg] z-0 hover-bounce"
-          style="left: 380px; width: 425px"
-        />
-        <img
-          src="Images/Tinder Phone.png"
-          alt="Tinder Phone"
-          class="w-48 md:w-60 relative z-10 hover-bounce"
-          style="width: 500px"
-        />
+      
+
+
+      
+          </div>
+        </div>
       </div>
+              </div>
+            </div>
+            </div>
+          </div>
+         </div>
+          
+          
+
+          </div>
+        </div>
+      </div>
+
+     
     </section>
   </body>
 
   <!-- Footer Section -->
+  <div class="mb-20"></div>
   <footer class="custom-footer">
     <div class="footer-container">
       <!-- Left Links -->

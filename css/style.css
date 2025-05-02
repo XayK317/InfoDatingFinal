@@ -99,3 +99,14 @@ header nav a:hover {
 .footer-social span:hover {
   opacity: 0.75;
 }
+
+
+* {box-sizing:border-box}
+
+.container {
+  display: flex;
+}
+.column {
+  flex:1;
+  
+}
