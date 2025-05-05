@@ -6,7 +6,6 @@
     <title>Homepage</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-      /* Simple bounce on hover */
       .hover-bounce:hover {
         transform: translateY(-6px) scale(1.03);
         transition: all 0.3s ease;
@@ -15,27 +14,11 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body class="font-sans text-black bg-white px-8 py-6">
-    <!-- <nav>
-      <a href="homepage.html">Home Page</a>
-      <a href="aboutus.html">About Us</a>
-      <a href="description.html">Analysis</a>
-      <a href="datavisuals.html">Data Visualization</a>
-    </nav> -->
-
-    <!-- Background Rectangle that Fills the Top -->
     <div class="top-rectangle h-24 w-full absolute top-0 left-0 z-0"></div>
-    <!-- originalx code before
-    <div class="bg-[#e6e4ef] h-24 w-full absolute top-0 left-0 z-0"></div> -->
 
-    <!-- Navbar that sits on top of the rectangle -->
     <header
       class="flex justify-between items-center mb-10 relative z-10 bg-transparent px-8 py-4"
     >
-      <!-- original code -->
-      <!-- <div class="flex items-center space-x-2">
-        <div class="w-6 h-6 rounded-full border-2 border-black"></div>
-        <span class="text-xl font-semibold">Online Dating Trends</span>
-      </div> -->
       <div class="flex items-center space-x-2">
         <img
           src="Images/0.png"
@@ -69,113 +52,124 @@
       </nav>
     </header>
 
-    <!-- Home Screen Section -->
-    <section
-      class="min-h-screen flex flex-col-reverse md:flex-row items-center justify-between px-10 py-16 gap-10"
-    > <div class="container">
-        <div class="column">
-      <!-- Left content -->
-      <div class="md:w-1/2 space-y-6 text-center md:text-left;">
-        <!-- Main Heading -->
-        <h1 class="text-5xl md:text-6xl font-bold leading-tight">
-            <span>Data Visualization</span><br />
+    <section class="min-h-screen flex items-center justify-center px-4 py-8">
+      <div class="max-w-5xl w-full text-center">
+        <h1 class="text-5xl md:text-6xl font-bold leading-tight mb-8">
+          <span>Data Visualization</span><br />
         </h1>
-      
-        <div class="slideshow-container relative mx-auto max-w-4xl">
-          <!-- Slide 1 -->
+
+        <div class="slideshow-container relative mx-auto w-full max-w-[600px]">
           <div class="slide fade hidden">
-            <img src="Images/Datingappinformation.PNG" alt="Slide 1" class="w-full h-auto rounded-lg" style="width: 600px; height: 800px;" />
-            <div class="text-center mt-4 text-lg font-semibold">Credit to Pew Research</div>
+            <img
+              src="Images/Datingappinformation.PNG"
+              alt="Slide 1"
+              class="w-full h-auto rounded-lg"
+              style="height: 800px"
+            />
+            <div class="text-center mt-4 text-lg font-semibold">
+              Credit to Pew Research
+            </div>
           </div>
 
-            <!-- Slide 2 -->
-            <div class="slide fade hidden">
-            <div class="flip-card">
+          <div class="slide fade hidden">
+            <div class="flip-card mx-auto">
               <div class="flip-card-inner">
-              <div class="flip-card-front">
-                <img src="Images/Us Dating App map.png" alt="Slide 2" class="w-full h-auto rounded-lg" />
-              </div>
-              <div class="flip-card-back">
-                <img src="Images/Map outline.png" />
-              </div>
+                <div class="flip-card-front">
+                  <img
+                    src="Images/Us Dating App map.png"
+                    alt="Slide 2"
+                    class="w-full h-auto rounded-lg"
+                  />
+                </div>
+                <div class="flip-card-back">
+                  <img src="Images/Map outline.png" />
+                </div>
               </div>
             </div>
-            <div class="text-center mt-4 text-lg font-semibold">Credit To PCMag</div>
+            <div class="text-center mt-4 text-lg font-semibold">
+              Credit To PCMag
             </div>
-            <style>
-              .flip-card {
-                background-color: transparent;
-                width: 500px;
-                height: 200px;
-                border: 1px solid #f1f1f1;
-                perspective: 1000px; 
-              }
-              
-              
-              .flip-card-inner {
-                position: relative;
-                width: 100%;
-                height: 100%;
-                text-align: center;
-                transition: transform 0.8s;
-                transform-style: preserve-3d;
-              }
-              
-             
-              .flip-card:hover .flip-card-inner {
-                transform: rotateY(180deg);
-              }
-              
-             
-              .flip-card-front, .flip-card-back {
-                position: absolute;
-                width: 100%;
-                height: 100%;
-                -webkit-backface-visibility: hidden; 
-                backface-visibility: hidden;
-              }
-              
-            
-              .flip-card-front {
-                background-color: #bbb;
-                color: black;
-              }
-              
-             
-              .flip-card-back {
-                background-color: dodgerblue;
-                color: white;
-                transform: rotateY(180deg);
-              }
-              </style>
-            <div>
-            
-          <!-- Slide 3 -->
-          <div class="slide fade hidden">
-            <img src="Images/ft_2023.02.02_key-findings-online-dating_02.png" alt="Slide 3" class="w-full h-auto rounded-lg" />
-            <div class="text-center mt-4 text-lg font-semibold">Credit to Pew Research</div>
           </div>
 
-          <!-- Slide 4-->
           <div class="slide fade hidden">
-            <img src="Images/ft_2023.02.02_key-findings-online-dating_04.png" alt="Slide 4" class="w-full h-auto rounded-lg" />
-            <div class="text-center mt-4 text-lg font-semibold">Credit to Pew Research</div>
+            <img
+              src="Images/ft_2023.02.02_key-findings-online-dating_02.png"
+              alt="Slide 3"
+              class="w-full h-auto rounded-lg"
+            />
+            <div class="text-center mt-4 text-lg font-semibold">
+              Credit to Pew Research
+            </div>
           </div>
 
-          <!-- Navigation Arrows -->
-          <a class="prev absolute left-0 top-1/2 transform -translate-y-1/2 text-2xl cursor-pointer">&#10094;</a>
-          <a class="next absolute right-0 top-1/2 transform -translate-y-1/2 text-2xl cursor-pointer">&#10095;</a>
+          <div class="slide fade hidden">
+            <img
+              src="Images/ft_2023.02.02_key-findings-online-dating_04.png"
+              alt="Slide 4"
+              class="w-full h-auto rounded-lg"
+            />
+            <div class="text-center mt-4 text-lg font-semibold">
+              Credit to Pew Research
+            </div>
+          </div>
+
+          <a
+            class="prev absolute left-0 top-1/2 transform -translate-y-1/2 text-2xl cursor-pointer"
+            >&#10094;</a
+          >
+          <a
+            class="next absolute right-0 top-1/2 transform -translate-y-1/2 text-2xl cursor-pointer"
+            >&#10095;</a
+          >
         </div>
+
+        <style>
+          .flip-card {
+            background-color: transparent;
+            width: 500px;
+            height: 200px;
+            border: 1px solid #f1f1f1;
+            perspective: 1000px;
+          }
+          .flip-card-inner {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            transition: transform 0.8s;
+            transform-style: preserve-3d;
+          }
+          .flip-card:hover .flip-card-inner {
+            transform: rotateY(180deg);
+          }
+          .flip-card-front,
+          .flip-card-back {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+          }
+          .flip-card-front {
+            background-color: #bbb;
+            color: black;
+          }
+          .flip-card-back {
+            background-color: dodgerblue;
+            color: white;
+            transform: rotateY(180deg);
+          }
+        </style>
 
         <script>
           let slideIndex = 0;
-          const slides = document.querySelectorAll('.slide');
-          const prev = document.querySelector('.prev');
-          const next = document.querySelector('.next');
+          const slides = document.querySelectorAll(".slide");
+          const prev = document.querySelector(".prev");
+          const next = document.querySelector(".next");
 
           function showSlide(index) {
             slides.forEach((slide, i) => {
-              slide.classList.toggle('hidden', i !== index);
+              slide.classList.toggle("hidden", i !== index);
             });
           }
 
@@ -184,86 +178,65 @@
             showSlide(slideIndex);
           }
 
-          prev.addEventListener('click', () => changeSlide(-1));
-          next.addEventListener('click', () => changeSlide(1));
+          prev.addEventListener("click", () => changeSlide(-1));
+          next.addEventListener("click", () => changeSlide(1));
 
-
-          // Initialize slideshow
           showSlide(slideIndex);
         </script>
-
-</div>
-        
-         
-       </div>
       </div>
-
-      
-
-
-      
-          </div>
-        </div>
-      </div>
-              </div>
-            </div>
-            </div>
-          </div>
-         </div>
-          
-          
-
-          </div>
-        </div>
-      </div>
-
-     
     </section>
+
+    <footer class="custom-footer">
+      <div class="footer-container">
+        <div class="footer-column">
+          <ul>
+            <li><a href="#">Im feeling Lucky</a></li>
+            <li><a href="#">Best App For You Survey</a></li>
+            <li><a href="#">Your Account</a></li>
+            <li><a href="#">Create Review</a></li>
+            <li><a href="#">Privacy & Cookie Policy</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-center">
+          <div
+            style="
+              text-align: center;
+              margin: 0 auto;
+              width: 200px;
+              font-weight: bold;
+              font-size: 24px;
+            "
+          >
+            XJT<br />CS
+          </div>
+          <p class="footer-description">
+            This website has been created out of interest and the want to
+            provide information on how the Covid-19 virus- era has affected
+            dating, more specifically online.
+          </p>
+        </div>
+
+        <div class="footer-column">
+          <ul>
+            <li><a href="#">Tinder App Link</a></li>
+            <li><a href="#">Bumbble App Link</a></li>
+            <li><a href="#">Hinge App Link</a></li>
+            <li><a href="#">External Sources</a></li>
+            <li><a href="#"></a>User Reviews</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-social">
+        <span>📘</span>
+        <span>🐦</span>
+        <span>📌</span>
+        <span>📷</span>
+        <span>▶️</span>
+        <span>✉️</span>
+        <span>📰</span>
+      </div>
+    </footer>
   </body>
-
-  <!-- Footer Section -->
-  <footer class="custom-footer">
-    <div class="footer-container">
-      <!-- Left Links -->
-      <div class="footer-column">
-        <ul>
-          <li><a href="#">Im feeling Lucky</a></li>
-          <li><a href="#">Best App For You Survey</a></li>
-          <li><a href="#">Your Account</a></li>
-          <li><a href="#">Create Review</a></li>
-          <li><a href="#">Privacy & Cookie Policy</a></li>
-        </ul>
-      </div>
-
-      <!-- Center Logo and Description -->
-      <div class="footer-center">
-      <div style="text-align:center;margin:0 auto;width:200px;font-weight:bold;font-size:24px;">XJT<br />CS</div>
-        <p class="footer-description">
-          This website has been created out of interest and the want to provide information on how the Covid-19 virus- era has affected dating, more specifically online.
-        </p>
-      </div>
-
-      <!-- Right Links -->
-      <div class="footer-column">
-        <ul>
-          <li><a href="#">Tinder App Link</a></li>
-          <li><a href="#">Bumbble App Link</a></li>
-          <li><a href="#">Hinge App Link</a></li>
-          <li><a href="#">External Sources</a></li>
-          <li><a href="#"></a>User Reviews</a></li>
-        </ul>
-      </div>
-    </div>
-
-    <!-- Social Icons -->
-    <div class="footer-social">
-      <span>📘</span>
-      <span>🐦</span>
-      <span>📌</span>
-      <span>📷</span>
-      <span>▶️</span>
-      <span>✉️</span>
-      <span>📰</span>
-    </div>
-  </footer>
 </html>
