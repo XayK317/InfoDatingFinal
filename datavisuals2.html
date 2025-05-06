@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Homepage</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      .hover-bounce:hover {
+        transform: translateY(-6px) scale(1.03);
+        transition: all 0.3s ease;
+      }
+    </style>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body class="font-sans text-black bg-white px-8 py-6">
+    <div class="top-rectangle h-24 w-full absolute top-0 left-0 z-0"></div>
+
+    <header
+      class="flex justify-between items-center mb-10 relative z-10 bg-transparent px-8 py-4"
+    >
+      <div class="flex items-center space-x-2">
+        <img
+          src="Images/0.png"
+          alt="Logo"
+          class="w-10 h-10 rounded-full object-cover"
+        />
+        <span class="text-xl font-semibold">Online Dating Trends</span>
+      </div>
+      <nav class="space-x-4 text-sm">
+        <a
+          href="homepage.html"
+          class="px-3 py-1 rounded-full hover:border hover:border-black transition"
+          >Home</a
+        >
+        <a
+          href="description.html"
+          class="px-3 py-1 rounded-full hover:border hover:border-black transition"
+          >Analysis</a
+        >
+        <a
+          href="datavisuals.html"
+          class="border border-black px-3 py-1 rounded-full bg-black text-white"
+          >Data Visualization</a
+        >
+        <a
+          href="aboutustweak.html"
+          class="px-3 py-1 rounded-full hover:border hover:border-black transition"
+          >About us</a
+        >
+      </nav>
+    </header>
+
+    <section
+      class="min-h-screen flex flex-col items-center justify-center px-4 py-8"
+    >
+      <div class="max-w-5xl w-full text-center">
+        <h1 class="text-5xl md:text-6xl font-bold leading-tight mb-8">
+          <span>Data Visualization</span><br />
+        </h1>
+
+        <div class="slideshow-container relative mx-auto w-full max-w-[600px]">
+          <div class="slide fade hidden">
+            <img
+              src="Images/Datingappinformation.PNG"
+              alt="Slide 1"
+              class="w-full h-auto rounded-lg"
+              style="height: 800px"
+            />
+            <div class="text-center mt-4 text-lg font-semibold">
+              Credit to Pew Research
+            </div>
+          </div>
+
+          <div class="slide fade hidden">
+            <div class="flip-card mx-auto">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <img
+                    src="Images/Us Dating App map.png"
+                    alt="Slide 2"
+                    class="w-full h-auto rounded-lg"
+                  />
+                </div>
+                <div class="flip-card-back">
+                  <img src="Images/Map outline.png" />
+                </div>
+              </div>
+            </div>
+            <div class="text-center mt-4 text-lg font-semibold">
+              Credit To PCMag
+            </div>
+          </div>
+
+          <div class="slide fade hidden">
+            <img
+              src="Images/ft_2023.02.02_key-findings-online-dating_02.png"
+              alt="Slide 3"
+              class="w-full h-auto rounded-lg"
+            />
+            <div class="text-center mt-4 text-lg font-semibold">
+              Credit to Pew Research
+            </div>
+          </div>
+
+          <div class="slide fade hidden">
+            <img
+              src="Images/ft_2023.02.02_key-findings-online-dating_04.png"
+              alt="Slide 4"
+              class="w-full h-auto rounded-lg"
+            />
+            <div class="text-center mt-4 text-lg font-semibold">
+              Credit to Pew Research
+            </div>
+          </div>
+
+          <!-- New Slide for Age Demographics -->
+          <div class="slide fade hidden">
+            <div class="mt-4 bg-gray-100 p-4 rounded-lg shadow text-left">
+              <h2 class="text-2xl font-bold text-pink-600 mb-4">
+                Dating App Age Demographics (2018–2024)
+              </h2>
+              <div class="mb-6">
+                <h3 class="text-xl text-blue-600 font-semibold mb-2">Tinder</h3>
+                <select
+                  id="tinderYear"
+                  onchange="renderTable('tinder')"
+                  class="mb-2 px-3 py-1 border border-gray-300 rounded"
+                >
+                  <option>2018</option>
+                  <option>2020</option>
+                  <option>2023</option>
+                  <option>2024</option>
+                </select>
+                <div id="tinderTable"></div>
+              </div>
+              <div class="mb-6">
+                <h3 class="text-xl text-blue-600 font-semibold mb-2">Bumble</h3>
+                <select
+                  id="bumbleYear"
+                  onchange="renderTable('bumble')"
+                  class="mb-2 px-3 py-1 border border-gray-300 rounded"
+                >
+                  <option>2023</option>
+                  <option>2024</option>
+                </select>
+                <div id="bumbleTable"></div>
+              </div>
+              <div class="mb-6">
+                <h3 class="text-xl text-blue-600 font-semibold mb-2">Hinge</h3>
+                <div id="hingeTable"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- New Slide for Canva Embed -->
+          <div class="slide fade hidden">
+            <div
+              style="
+                position: relative;
+                width: 100%;
+                height: 0;
+                padding-top: 75%;
+                padding-bottom: 0;
+                box-shadow: 0 2px 8px 0 rgba(63, 69, 81, 0.16);
+                margin-top: 1.6em;
+                margin-bottom: 0.9em;
+                overflow: hidden;
+                border-radius: 8px;
+                will-change: transform;
+              "
+            >
+              <iframe
+                loading="lazy"
+                style="
+                  position: absolute;
+                  width: 100%;
+                  height: 100%;
+                  top: 0;
+                  left: 0;
+                  border: none;
+                  padding: 0;
+                  margin: 0;
+                "
+                src="https://www.canva.com/design/DAGmnyDyii0/8XhLGluW-WX89P8C5Kb85g/view?embed"
+                allowfullscreen="allowfullscreen"
+                allow="fullscreen"
+              >
+              </iframe>
+            </div>
+            <a
+              href="https://www.canva.com/design/DAGmnyDyii0/8XhLGluW-WX89P8C5Kb85g/view?utm_content=DAGmnyDyii0&amp;utm_campaign=designshare&amp;utm_medium=embeds&amp;utm_source=link"
+              target="_blank"
+              rel="noopener"
+            ></a>
+          </div>
+
+          <a
+            class="prev absolute left-0 top-1/2 transform -translate-y-1/2 text-2xl cursor-pointer"
+            >&#10094;</a
+          >
+          <a
+            class="next absolute right-0 top-1/2 transform -translate-y-1/2 text-2xl cursor-pointer"
+            >&#10095;</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <footer class="custom-footer">
+      <div class="footer-container">
+        <div class="footer-column">
+          <ul>
+            <li><a href="#">Im feeling Lucky</a></li>
+            <li><a href="#">Best App For You Survey</a></li>
+            <li><a href="#">Your Account</a></li>
+            <li><a href="#">Create Review</a></li>
+            <li><a href="#">Privacy & Cookie Policy</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-center">
+          <div
+            style="
+              text-align: center;
+              margin: 0 auto;
+              width: 200px;
+              font-weight: bold;
+              font-size: 24px;
+            "
+          >
+            XJT<br />CS
+          </div>
+          <p class="footer-description">
+            This website has been created out of interest and the want to
+            provide information on how the Covid-19 virus- era has affected
+            dating, more specifically online.
+          </p>
+        </div>
+
+        <div class="footer-column">
+          <ul>
+            <li><a href="#">Tinder App Link</a></li>
+            <li><a href="#">Bumbble App Link</a></li>
+            <li><a href="#">Hinge App Link</a></li>
+            <li><a href="#">External Sources</a></li>
+            <li><a href="#">User Reviews</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-social">
+        <span>📘</span>
+        <span>🐦</span>
+        <span>🖌️</span>
+        <span>📷</span>
+        <span>▶️</span>
+        <span>✉️</span>
+        <span>📰</span>
+      </div>
+    </footer>
+
+    <script>
+      let slideIndex = 0;
+      const slides = document.querySelectorAll(".slide");
+      const prev = document.querySelector(".prev");
+      const next = document.querySelector(".next");
+      function showSlide(index) {
+        slides.forEach((slide, i) => {
+          slide.classList.toggle("hidden", i !== index);
+        });
+      }
+      function changeSlide(step) {
+        slideIndex = (slideIndex + step + slides.length) % slides.length;
+        showSlide(slideIndex);
+      }
+      prev.addEventListener("click", () => changeSlide(-1));
+      next.addEventListener("click", () => changeSlide(1));
+      showSlide(slideIndex);
+
+      const data = {
+        tinder: {
+          2018: {
+            "18-24": 35,
+            "25-34": 40,
+            "35-44": 18,
+            "45-54": 3,
+            "55-64": 3,
+          },
+          2020: { "18-29": 62 },
+          2023: {
+            "18-24": 35,
+            "25-34": 25,
+            "35-44": 20,
+            "45-54": 8,
+            "55+": 10,
+          },
+          2024: {
+            "18-24": 35.7,
+            "25-34": 25.5,
+            "35-44": 20.4,
+            "45-54": 8.2,
+            "55+": 10.2,
+          },
+        },
+        bumble: {
+          2023: {
+            "18-24": 26.7,
+            "25-34": 33.3,
+            "35-44": 18,
+            "45-54": 11,
+            "55-64": 6.9,
+            "65+": 4.1,
+          },
+          2024: {
+            "Under 25": 18,
+            "25-34": 15.1,
+            "35-44": 15.6,
+            "45-54": 18.2,
+            "55-64": 14,
+            "65+": 19.1,
+          },
+        },
+        hinge: {
+          2023: {
+            "18-24": 26.2,
+            "25-34": 31.5,
+            "35-44": 18.2,
+            "45-54": 12,
+            "55-64": 7.5,
+            "65+": 4.6,
+          },
+        },
+      };
+      function renderTable(app) {
+        const year = document.getElementById(`${app}Year`)?.value || "2023";
+        const container = document.getElementById(`${app}Table`);
+        const demographics = data[app][year];
+        let html = `<table class="w-full mt-2 border-collapse bg-white shadow"><thead><tr class="bg-blue-600 text-white"><th class="p-2">Age Group</th><th class="p-2">Percentage</th></tr></thead><tbody>`;
+        for (let group in demographics) {
+          html += `<tr class="border-b hover:bg-blue-50"><td class="p-2">${group}</td><td class="p-2">${demographics[group]}%</td></tr>`;
+        }
+        html += `</tbody></table>`;
+        container.innerHTML = html;
+      }
+      renderTable("tinder");
+      renderTable("bumble");
+      renderTable("hinge");
+    </script>
+  </body>
+</html>
