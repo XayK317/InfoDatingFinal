@@ -17,55 +17,103 @@
   <body class="font-sans text-black bg-white px-8 py-6">
     <div class="top-rectangle h-24 w-full absolute top-0 left-0 z-0"></div>
 
-    <header class="flex justify-between items-center mb-10 relative z-10 bg-transparent px-8 py-4">
+    <header
+      class="flex justify-between items-center mb-10 relative z-10 bg-transparent px-8 py-4"
+    >
       <div class="flex items-center space-x-2">
-        <img src="Images/0.png" alt="Logo" class="w-10 h-10 rounded-full object-cover" />
+        <img
+          src="Images/0.png"
+          alt="Logo"
+          class="w-10 h-10 rounded-full object-cover"
+        />
         <span class="text-xl font-semibold">Online Dating Trends</span>
       </div>
       <nav class="space-x-4 text-sm">
-        <a href="homepage.html" class="px-3 py-1 rounded-full hover:border hover:border-black transition">Home</a>
-        <a href="description.html" class="px-3 py-1 rounded-full hover:border hover:border-black transition">Analysis</a>
-        <a href="datavisuals.html" class="border border-black px-3 py-1 rounded-full bg-black text-white">Data Visualization</a>
-        <a href="aboutustweak.html" class="px-3 py-1 rounded-full hover:border hover:border-black transition">About us</a>
+        <a
+          href="homepage.html"
+          class="px-3 py-1 rounded-full hover:border hover:border-black transition"
+          >Home</a
+        >
+        <a
+          href="description.html"
+          class="px-3 py-1 rounded-full hover:border hover:border-black transition"
+          >Analysis</a
+        >
+        <a
+          href="datavisuals.html"
+          class="border border-black px-3 py-1 rounded-full bg-black text-white"
+          >Data Visualization</a
+        >
+        <a
+          href="aboutustweak.html"
+          class="px-3 py-1 rounded-full hover:border hover:border-black transition"
+          >About us</a
+        >
       </nav>
     </header>
 
-    <section class="min-h-screen flex flex-col items-center justify-center px-4 py-8">
+    <section
+      class="min-h-screen flex flex-col items-center justify-center px-4 py-8"
+    >
       <div class="max-w-5xl w-full text-center">
         <h1 class="text-5xl md:text-6xl font-bold leading-tight mb-8">
           <span>Data Visualization</span><br />
         </h1>
 
         <div class="slideshow-container relative mx-auto w-full max-w-[600px]">
-
           <!-- Existing slides -->
           <div class="slide fade hidden">
-            <img src="Images/Datingappinformation.PNG" alt="Slide 1" class="w-full h-auto rounded-lg" style="height: 800px" />
-            <div class="text-center mt-4 text-lg font-semibold">Credit to Pew Research</div>
+            <img
+              src="Images/Datingappinformation.PNG"
+              alt="Slide 1"
+              class="w-full h-auto rounded-lg"
+              style="height: 800px"
+            />
+            <div class="text-center mt-4 text-lg font-semibold">
+              Credit to Pew Research
+            </div>
           </div>
 
           <div class="slide fade hidden">
             <div class="flip-card mx-auto">
               <div class="flip-card-inner">
                 <div class="flip-card-front">
-                  <img src="Images/Us Dating App map.png" alt="Slide 2" class="w-full h-auto rounded-lg" />
+                  <img
+                    src="Images/Us Dating App map.png"
+                    alt="Slide 2"
+                    class="w-full h-auto rounded-lg"
+                  />
                 </div>
                 <div class="flip-card-back">
                   <img src="Images/Map outline.png" />
                 </div>
               </div>
             </div>
-            <div class="text-center mt-4 text-lg font-semibold">Credit To PCMag</div>
+            <div class="text-center mt-4 text-lg font-semibold">
+              Credit To PCMag
+            </div>
           </div>
 
           <div class="slide fade hidden">
-            <img src="Images/ft_2023.02.02_key-findings-online-dating_02.png" alt="Slide 3" class="w-full h-auto rounded-lg" />
-            <div class="text-center mt-4 text-lg font-semibold">Credit to Pew Research</div>
+            <img
+              src="Images/ft_2023.02.02_key-findings-online-dating_02.png"
+              alt="Slide 3"
+              class="w-full h-auto rounded-lg"
+            />
+            <div class="text-center mt-4 text-lg font-semibold">
+              Credit to Pew Research
+            </div>
           </div>
 
           <div class="slide fade hidden">
-            <img src="Images/ft_2023.02.02_key-findings-online-dating_04.png" alt="Slide 4" class="w-full h-auto rounded-lg" />
-            <div class="text-center mt-4 text-lg font-semibold">Credit to Pew Research</div>
+            <img
+              src="Images/ft_2023.02.02_key-findings-online-dating_04.png"
+              alt="Slide 4"
+              class="w-full h-auto rounded-lg"
+            />
+            <div class="text-center mt-4 text-lg font-semibold">
+              Credit to Pew Research
+            </div>
           </div>
 
           <!-- New Slide: Gender Distribution Chart -->
@@ -84,7 +132,11 @@
               </h2>
               <div class="mb-6">
                 <h3 class="text-xl text-blue-600 font-semibold mb-2">Tinder</h3>
-                <select id="tinderYear" onchange="renderTable('tinder')" class="mb-2 px-3 py-1 border border-gray-300 rounded">
+                <select
+                  id="tinderYear"
+                  onchange="renderTable('tinder')"
+                  class="mb-2 px-3 py-1 border border-gray-300 rounded"
+                >
                   <option>2018</option>
                   <option>2020</option>
                   <option>2023</option>
@@ -94,7 +146,11 @@
               </div>
               <div class="mb-6">
                 <h3 class="text-xl text-blue-600 font-semibold mb-2">Bumble</h3>
-                <select id="bumbleYear" onchange="renderTable('bumble')" class="mb-2 px-3 py-1 border border-gray-300 rounded">
+                <select
+                  id="bumbleYear"
+                  onchange="renderTable('bumble')"
+                  class="mb-2 px-3 py-1 border border-gray-300 rounded"
+                >
                   <option>2023</option>
                   <option>2024</option>
                 </select>
@@ -109,15 +165,49 @@
 
           <!-- Canva Embed Slide -->
           <div class="slide fade hidden">
-            <div style="position: relative; width: 100%; height: 0; padding-top: 75%; padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63, 69, 81, 0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden; border-radius: 8px; will-change: transform;">
-              <iframe loading="lazy" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0; margin: 0;" src="https://www.canva.com/design/DAGmnyDyii0/8XhLGluW-WX89P8C5Kb85g/view?embed" allowfullscreen="allowfullscreen" allow="fullscreen"></iframe>
+            <div
+              style="
+                position: relative;
+                width: 100%;
+                height: 0;
+                padding-top: 75%;
+                padding-bottom: 0;
+                box-shadow: 0 2px 8px 0 rgba(63, 69, 81, 0.16);
+                margin-top: 1.6em;
+                margin-bottom: 0.9em;
+                overflow: hidden;
+                border-radius: 8px;
+                will-change: transform;
+              "
+            >
+              <iframe
+                loading="lazy"
+                style="
+                  position: absolute;
+                  width: 100%;
+                  height: 100%;
+                  top: 0;
+                  left: 0;
+                  border: none;
+                  padding: 0;
+                  margin: 0;
+                "
+                src="https://www.canva.com/design/DAGmnyDyii0/8XhLGluW-WX89P8C5Kb85g/view?embed"
+                allowfullscreen="allowfullscreen"
+                allow="fullscreen"
+              ></iframe>
             </div>
           </div>
 
           <!-- Slideshow Controls -->
-          <a class="prev absolute left-0 top-1/2 transform -translate-y-1/2 text-2xl cursor-pointer">&#10094;</a>
-          <a class="next absolute right-0 top-1/2 transform -translate-y-1/2 text-2xl cursor-pointer">&#10095;</a>
-
+          <a
+            class="prev absolute left-0 top-1/2 transform -translate-y-1/2 text-2xl cursor-pointer"
+            >&#10094;</a
+          >
+          <a
+            class="next absolute right-0 top-1/2 transform -translate-y-1/2 text-2xl cursor-pointer"
+            >&#10095;</a
+          >
         </div>
       </div>
     </section>
@@ -134,7 +224,15 @@
           </ul>
         </div>
         <div class="footer-center">
-          <div style="text-align: center; margin: 0 auto; width: 200px; font-weight: bold; font-size: 24px;">
+          <div
+            style="
+              text-align: center;
+              margin: 0 auto;
+              width: 200px;
+              font-weight: bold;
+              font-size: 24px;
+            "
+          >
             XJT<br />CS
           </div>
           <p class="footer-description">
@@ -146,7 +244,7 @@
         <div class="footer-column">
           <ul>
             <li><a href="#">Tinder App Link</a></li>
-            <li><a href="#">Bumbble App Link</a></li>
+            <li><a href="#">Bumble App Link</a></li>
             <li><a href="#">Hinge App Link</a></li>
             <li><a href="#">External Sources</a></li>
             <li><a href="#">User Reviews</a></li>
@@ -154,7 +252,8 @@
         </div>
       </div>
       <div class="footer-social">
-        <span>📘</span><span>🐦</span><span>🖌️</span><span>📷</span><span>▶️</span><span>✉️</span><span>📰</span>
+        <span>📘</span><span>🐦</span><span>🖌️</span><span>📷</span
+        ><span>▶️</span><span>✉️</span><span>📰</span>
       </div>
     </footer>
 
@@ -182,18 +281,57 @@
       // Table rendering logic
       const data = {
         tinder: {
-          2018: { "18-24": 35, "25-34": 40, "35-44": 18, "45-54": 3, "55-64": 3 },
+          2018: {
+            "18-24": 35,
+            "25-34": 40,
+            "35-44": 18,
+            "45-54": 3,
+            "55-64": 3,
+          },
           2020: { "18-29": 62 },
-          2023: { "18-24": 35, "25-34": 25, "35-44": 20, "45-54": 8, "55+": 10 },
-          2024: { "18-24": 35.7, "25-34": 25.5, "35-44": 20.4, "45-54": 8.2, "55+": 10.2 }
+          2023: {
+            "18-24": 35,
+            "25-34": 25,
+            "35-44": 20,
+            "45-54": 8,
+            "55+": 10,
+          },
+          2024: {
+            "18-24": 35.7,
+            "25-34": 25.5,
+            "35-44": 20.4,
+            "45-54": 8.2,
+            "55+": 10.2,
+          },
         },
         bumble: {
-          2023: { "18-24": 26.7, "25-34": 33.3, "35-44": 18, "45-54": 11, "55-64": 6.9, "65+": 4.1 },
-          2024: { "Under 25": 18, "25-34": 15.1, "35-44": 15.6, "45-54": 18.2, "55-64": 14, "65+": 19.1 }
+          2023: {
+            "18-24": 26.7,
+            "25-34": 33.3,
+            "35-44": 18,
+            "45-54": 11,
+            "55-64": 6.9,
+            "65+": 4.1,
+          },
+          2024: {
+            "Under 25": 18,
+            "25-34": 15.1,
+            "35-44": 15.6,
+            "45-54": 18.2,
+            "55-64": 14,
+            "65+": 19.1,
+          },
         },
         hinge: {
-          2023: { "18-24": 26.2, "25-34": 31.5, "35-44": 18.2, "45-54": 12, "55-64": 7.5, "65+": 4.6 }
-        }
+          2023: {
+            "18-24": 26.2,
+            "25-34": 31.5,
+            "35-44": 18.2,
+            "45-54": 12,
+            "55-64": 7.5,
+            "65+": 4.6,
+          },
+        },
       };
 
       function renderTable(app) {
@@ -219,13 +357,43 @@
         const chartData = {
           labels: years,
           datasets: [
-            { label: "Tinder Male %", data: [75, 75, 75, 75, 75, 75, 75], backgroundColor: "rgba(0, 102, 204, 0.8)", stack: "Tinder" },
-            { label: "Tinder Female %", data: [25, 25, 25, 25, 25, 25, 25], backgroundColor: "rgba(173, 216, 230, 0.8)", stack: "Tinder" },
-            { label: "Hinge Male %", data: [null, null, null, null, null, 60.36, null], backgroundColor: "rgba(0, 153, 76, 0.8)", stack: "Hinge" },
-            { label: "Hinge Female %", data: [null, null, null, null, null, 39.64, null], backgroundColor: "rgba(144, 238, 144, 0.8)", stack: "Hinge" },
-            { label: "Bumble Male %", data: [null, null, null, null, null, 58.63, 61], backgroundColor: "rgba(255, 153, 51, 0.8)", stack: "Bumble" },
-            { label: "Bumble Female %", data: [null, null, null, null, null, 41.37, 39], backgroundColor: "rgba(255, 222, 173, 0.8)", stack: "Bumble" }
-          ]
+            {
+              label: "Tinder Male %",
+              data: [75, 75, 75, 75, 75, 75, 75],
+              backgroundColor: "rgba(0, 102, 204, 0.8)",
+              stack: "Tinder",
+            },
+            {
+              label: "Tinder Female %",
+              data: [25, 25, 25, 25, 25, 25, 25],
+              backgroundColor: "rgba(173, 216, 230, 0.8)",
+              stack: "Tinder",
+            },
+            {
+              label: "Hinge Male %",
+              data: [null, null, null, null, null, 60.36, null],
+              backgroundColor: "rgba(0, 153, 76, 0.8)",
+              stack: "Hinge",
+            },
+            {
+              label: "Hinge Female %",
+              data: [null, null, null, null, null, 39.64, null],
+              backgroundColor: "rgba(144, 238, 144, 0.8)",
+              stack: "Hinge",
+            },
+            {
+              label: "Bumble Male %",
+              data: [null, null, null, null, null, 58.63, 61],
+              backgroundColor: "rgba(255, 153, 51, 0.8)",
+              stack: "Bumble",
+            },
+            {
+              label: "Bumble Female %",
+              data: [null, null, null, null, null, 41.37, 39],
+              backgroundColor: "rgba(255, 222, 173, 0.8)",
+              stack: "Bumble",
+            },
+          ],
         };
         const config = {
           type: "bar",
@@ -233,7 +401,7 @@
           options: {
             responsive: true,
             plugins: {
-              legend: { position: "top" }
+              legend: { position: "top" },
             },
             scales: {
               x: { stacked: true },
@@ -241,10 +409,10 @@
                 stacked: true,
                 beginAtZero: true,
                 max: 100,
-                title: { display: true, text: "Percentage of Users" }
-              }
-            }
-          }
+                title: { display: true, text: "Percentage of Users" },
+              },
+            },
+          },
         };
         new Chart(ctx, config);
       });
