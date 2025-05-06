@@ -27,7 +27,6 @@
         />
         <span class="text-xl font-semibold">Online Dating Trends</span>
       </div>
-
       <nav class="space-x-4 text-sm">
         <a
           href="homepage.html"
@@ -52,7 +51,9 @@
       </nav>
     </header>
 
-    <section class="min-h-screen flex items-center justify-center px-4 py-8">
+    <section
+      class="min-h-screen flex flex-col items-center justify-center px-4 py-8"
+    >
       <div class="max-w-5xl w-full text-center">
         <h1 class="text-5xl md:text-6xl font-bold leading-tight mb-8">
           <span>Data Visualization</span><br />
@@ -113,6 +114,45 @@
             </div>
           </div>
 
+          <!-- New Slide for Age Demographics -->
+          <div class="slide fade hidden">
+            <div class="mt-4 bg-gray-100 p-4 rounded-lg shadow text-left">
+              <h2 class="text-2xl font-bold text-pink-600 mb-4">
+                Dating App Age Demographics (2018–2024)
+              </h2>
+              <div class="mb-6">
+                <h3 class="text-xl text-blue-600 font-semibold mb-2">Tinder</h3>
+                <select
+                  id="tinderYear"
+                  onchange="renderTable('tinder')"
+                  class="mb-2 px-3 py-1 border border-gray-300 rounded"
+                >
+                  <option>2018</option>
+                  <option>2020</option>
+                  <option>2023</option>
+                  <option>2024</option>
+                </select>
+                <div id="tinderTable"></div>
+              </div>
+              <div class="mb-6">
+                <h3 class="text-xl text-blue-600 font-semibold mb-2">Bumble</h3>
+                <select
+                  id="bumbleYear"
+                  onchange="renderTable('bumble')"
+                  class="mb-2 px-3 py-1 border border-gray-300 rounded"
+                >
+                  <option>2023</option>
+                  <option>2024</option>
+                </select>
+                <div id="bumbleTable"></div>
+              </div>
+              <div class="mb-6">
+                <h3 class="text-xl text-blue-600 font-semibold mb-2">Hinge</h3>
+                <div id="hingeTable"></div>
+              </div>
+            </div>
+          </div>
+
           <a
             class="prev absolute left-0 top-1/2 transform -translate-y-1/2 text-2xl cursor-pointer"
             >&#10094;</a
@@ -122,67 +162,6 @@
             >&#10095;</a
           >
         </div>
-
-        <style>
-          .flip-card {
-            background-color: transparent;
-            width: 500px;
-            height: 200px;
-            border: 1px solid #f1f1f1;
-            perspective: 1000px;
-          }
-          .flip-card-inner {
-            position: relative;
-            width: 100%;
-            height: 100%;
-            text-align: center;
-            transition: transform 0.8s;
-            transform-style: preserve-3d;
-          }
-          .flip-card:hover .flip-card-inner {
-            transform: rotateY(180deg);
-          }
-          .flip-card-front,
-          .flip-card-back {
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            -webkit-backface-visibility: hidden;
-            backface-visibility: hidden;
-          }
-          .flip-card-front {
-            background-color: #bbb;
-            color: black;
-          }
-          .flip-card-back {
-            background-color: dodgerblue;
-            color: white;
-            transform: rotateY(180deg);
-          }
-        </style>
-
-        <script>
-          let slideIndex = 0;
-          const slides = document.querySelectorAll(".slide");
-          const prev = document.querySelector(".prev");
-          const next = document.querySelector(".next");
-
-          function showSlide(index) {
-            slides.forEach((slide, i) => {
-              slide.classList.toggle("hidden", i !== index);
-            });
-          }
-
-          function changeSlide(step) {
-            slideIndex = (slideIndex + step + slides.length) % slides.length;
-            showSlide(slideIndex);
-          }
-
-          prev.addEventListener("click", () => changeSlide(-1));
-          next.addEventListener("click", () => changeSlide(1));
-
-          showSlide(slideIndex);
-        </script>
       </div>
     </section>
 
@@ -227,16 +206,103 @@
           </ul>
         </div>
       </div>
-
       <div class="footer-social">
         <span>📘</span>
         <span>🐦</span>
-        <span>📌</span>
+        <span>🖌️</span>
         <span>📷</span>
         <span>▶️</span>
         <span>✉️</span>
         <span>📰</span>
       </div>
     </footer>
+
+    <script>
+      let slideIndex = 0;
+      const slides = document.querySelectorAll(".slide");
+      const prev = document.querySelector(".prev");
+      const next = document.querySelector(".next");
+      function showSlide(index) {
+        slides.forEach((slide, i) => {
+          slide.classList.toggle("hidden", i !== index);
+        });
+      }
+      function changeSlide(step) {
+        slideIndex = (slideIndex + step + slides.length) % slides.length;
+        showSlide(slideIndex);
+      }
+      prev.addEventListener("click", () => changeSlide(-1));
+      next.addEventListener("click", () => changeSlide(1));
+      showSlide(slideIndex);
+
+      const data = {
+        tinder: {
+          2018: {
+            "18-24": 35,
+            "25-34": 40,
+            "35-44": 18,
+            "45-54": 3,
+            "55-64": 3,
+          },
+          2020: { "18-29": 62 },
+          2023: {
+            "18-24": 35,
+            "25-34": 25,
+            "35-44": 20,
+            "45-54": 8,
+            "55+": 10,
+          },
+          2024: {
+            "18-24": 35.7,
+            "25-34": 25.5,
+            "35-44": 20.4,
+            "45-54": 8.2,
+            "55+": 10.2,
+          },
+        },
+        bumble: {
+          2023: {
+            "18-24": 26.7,
+            "25-34": 33.3,
+            "35-44": 18,
+            "45-54": 11,
+            "55-64": 6.9,
+            "65+": 4.1,
+          },
+          2024: {
+            "Under 25": 18,
+            "25-34": 15.1,
+            "35-44": 15.6,
+            "45-54": 18.2,
+            "55-64": 14,
+            "65+": 19.1,
+          },
+        },
+        hinge: {
+          2023: {
+            "18-24": 26.2,
+            "25-34": 31.5,
+            "35-44": 18.2,
+            "45-54": 12,
+            "55-64": 7.5,
+            "65+": 4.6,
+          },
+        },
+      };
+      function renderTable(app) {
+        const year = document.getElementById(`${app}Year`)?.value || "2023";
+        const container = document.getElementById(`${app}Table`);
+        const demographics = data[app][year];
+        let html = `<table class="w-full mt-2 border-collapse bg-white shadow"><thead><tr class="bg-blue-600 text-white"><th class="p-2">Age Group</th><th class="p-2">Percentage</th></tr></thead><tbody>`;
+        for (let group in demographics) {
+          html += `<tr class="border-b hover:bg-blue-50"><td class="p-2">${group}</td><td class="p-2">${demographics[group]}%</td></tr>`;
+        }
+        html += `</tbody></table>`;
+        container.innerHTML = html;
+      }
+      renderTable("tinder");
+      renderTable("bumble");
+      renderTable("hinge");
+    </script>
   </body>
 </html>
